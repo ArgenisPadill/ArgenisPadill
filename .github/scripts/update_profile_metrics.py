@@ -68,12 +68,28 @@ collection = user["contributionsCollection"]
 calendar = collection["contributionCalendar"]
 weeks = calendar["weeks"]
 
+all_days = [
+    day
+    for week in weeks
+    for day in week["contributionDays"]
+]
+
+active_days = sum(1 for day in all_days if int(day["contributionCount"]) > 0)
+
+longest_streak = 0
+current_streak = 0
+for day in all_days:
+    if int(day["contributionCount"]) > 0:
+        current_streak += 1
+        longest_streak = max(longest_streak, current_streak)
+    else:
+        current_streak = 0
+
 metrics = {
     "total": int(calendar["totalContributions"]),
     "commits": int(collection["totalCommitContributions"]),
-    "prs": int(collection["totalPullRequestContributions"]),
-    "issues": int(collection["totalIssueContributions"]),
-    "reviews": int(collection["totalPullRequestReviewContributions"]),
+    "active_days": active_days,
+    "longest_streak": longest_streak,
 }
 
 TEXT = {
@@ -88,8 +104,8 @@ TEXT = {
         "contribution_plural": "contribuciones",
         "metrics_heading": lambda m: f"### {m['total']:,} contribuciones en {year}",
         "metrics_line": lambda m: (
-            f"**{m['commits']:,} commits** · **{m['prs']:,} pull requests** · "
-            f"**{m['issues']:,} issues** · **{m['reviews']:,} revisiones**"
+            f"**{m['commits']:,} commits** · **{m['active_days']:,} días activos** · "
+            f"**mejor racha: {m['longest_streak']:,} días**"
         ),
     },
     "en": {
@@ -103,8 +119,8 @@ TEXT = {
         "contribution_plural": "contributions",
         "metrics_heading": lambda m: f"### {m['total']:,} contributions in {year}",
         "metrics_line": lambda m: (
-            f"**{m['commits']:,} commits** · **{m['prs']:,} pull requests** · "
-            f"**{m['issues']:,} issues** · **{m['reviews']:,} reviews**"
+            f"**{m['commits']:,} commits** · **{m['active_days']:,} active days** · "
+            f"**longest streak: {m['longest_streak']:,} days**"
         ),
     },
 }
