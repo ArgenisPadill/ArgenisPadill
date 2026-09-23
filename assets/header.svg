@@ -1,0 +1,72 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1220"/>
+      <stop offset="0.52" stop-color="#0D1729"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="250" y1="0" x2="950" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="0.5" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity=".30"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#94A3B8" stroke-opacity=".06"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .orbA { animation: driftA 8s ease-in-out infinite alternate; }
+    .orbB { animation: driftB 10s ease-in-out infinite alternate; }
+    .scan { animation: scan 5s linear infinite; }
+    .pulse { animation: pulse 2.4s ease-in-out infinite; }
+    .dash { stroke-dasharray: 10 14; animation: dash 12s linear infinite; }
+    @keyframes driftA { from { transform: translate(-20px,-6px); } to { transform: translate(55px,16px); } }
+    @keyframes driftB { from { transform: translate(20px,10px); } to { transform: translate(-60px,-12px); } }
+    @keyframes scan { 0% { transform: translateX(-500px); opacity:0; } 15% { opacity:.35; } 85% { opacity:.35; } 100% { transform: translateX(1500px); opacity:0; } }
+    @keyframes pulse { 0%,100% { opacity:.45; } 50% { opacity:1; } }
+    @keyframes dash { to { stroke-dashoffset:-240; } }
+    @media (prefers-reduced-motion: reduce) {
+      .orbA,.orbB,.scan,.pulse,.dash { animation:none; }
+    }
+  </style>
+
+  <rect width="1200" height="300" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="24" fill="url(#grid)"/>
+
+  <g class="orbA" filter="url(#soft)">
+    <circle cx="170" cy="78" r="125" fill="url(#glow)"/>
+  </g>
+  <g class="orbB" filter="url(#soft)">
+    <circle cx="1060" cy="220" r="155" fill="url(#glow)"/>
+  </g>
+
+  <path class="dash" d="M70 235 C260 200, 325 260, 490 224 S760 180, 1130 225" stroke="url(#accent)" stroke-opacity=".28" stroke-width="2" fill="none"/>
+
+  <g opacity=".75">
+    <circle cx="84" cy="52" r="5" fill="#38BDF8" class="pulse"/>
+    <circle cx="104" cy="52" r="5" fill="#60A5FA" opacity=".65"/>
+    <circle cx="124" cy="52" r="5" fill="#A78BFA" opacity=".55"/>
+  </g>
+
+  <rect x="72" y="72" width="1056" height="166" rx="18" fill="#0F172A" fill-opacity=".46" stroke="#94A3B8" stroke-opacity=".12"/>
+
+  <text x="600" y="128" text-anchor="middle" fill="#F8FAFC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="40" font-weight="700" letter-spacing="4">
+    ARGENIS PADILLA
+  </text>
+  <text x="600" y="172" text-anchor="middle" fill="url(#accent)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" font-weight="600" letter-spacing="2.4">
+    SYSTEMS • INFRASTRUCTURE • BACKEND • DATA
+  </text>
+  <text x="600" y="207" text-anchor="middle" fill="#94A3B8" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" letter-spacing="1.2">
+    build · automate · secure · improve
+  </text>
+
+  <rect class="scan" x="-420" y="72" width="320" height="166" fill="url(#accent)" opacity=".08" transform="skewX(-16)"/>
+</svg>
