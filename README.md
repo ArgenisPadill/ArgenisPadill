@@ -7,7 +7,7 @@ PROFILE GOVERNANCE
 - Generated metric assets: assets/activity-es.svg and assets/activity-en.svg (do not edit manually)
 - Metric automation: .github/workflows/profile-metrics.yml
 - Keep both language versions structurally aligned.
-- Keep the top-level narrative concise; detailed technologies belong in "Stack técnico".
+- Readability first: avoid <sub> for body content and avoid multi-column prose.
 -->
 
 <p align="center">
@@ -16,12 +16,12 @@ PROFILE GOVERNANCE
 
 <p align="center">
   <a href="./README.en.md" title="Cambiar a English">
-    <img src="./assets/language-es.svg" width="240" alt="Selector de idioma: Español activo, English disponible" />
+    <img src="./assets/language-es.svg" width="260" alt="Selector de idioma: Español activo, English disponible" />
   </a>
 </p>
 
 <p align="center">
-  <sub><strong>Systems</strong> · <strong>Data Science</strong> · <strong>AI</strong> · <strong>Software</strong> · <strong>Databases</strong> · <strong>Infrastructure</strong> · <strong>Automation</strong></sub>
+  <strong>Systems</strong> · <strong>Data Science</strong> · <strong>AI</strong> · <strong>Software</strong> · <strong>Databases</strong> · <strong>Infrastructure</strong> · <strong>Automation</strong>
 </p>
 
 <p align="center">
@@ -36,46 +36,36 @@ PROFILE GOVERNANCE
 <a id="sobre-mi"></a>
 ## Sobre mí
 
-<table>
-<tr>
-<td width="63%" valign="top">
-<p>Soy un profesional de tecnología con experiencia en <strong>sistemas e infraestructura</strong>, <strong>desarrollo de software</strong>, <strong>bases de datos</strong>, <strong>análisis de datos</strong> e <strong>inteligencia artificial aplicada</strong>.</p>
+<p align="justify">
+Soy un profesional de tecnología con experiencia en <strong>sistemas e infraestructura</strong>, <strong>desarrollo de software</strong>, <strong>bases de datos</strong>, <strong>análisis de datos</strong> e <strong>inteligencia artificial aplicada</strong>. Mi perfil combina operación tecnológica con programación y una formación especializada en <strong>Ciencia de Datos</strong>, lo que me permite trabajar desde la infraestructura que soporta una solución hasta el procesamiento, análisis y presentación de la información que genera.
+</p>
 
-<p>Mi perfil combina operación tecnológica con programación y una formación especializada en <strong>Ciencia de Datos</strong>, lo que me permite trabajar desde la infraestructura que soporta una solución hasta el procesamiento, análisis y presentación de la información que genera.</p>
+<p align="justify">
+Me interesa construir soluciones <strong>reproducibles, documentadas y mantenibles</strong>, automatizar procesos repetitivos y convertir datos y problemas operativos en información, herramientas y sistemas útiles.
+</p>
 
-<p>Me interesa construir soluciones <strong>reproducibles, documentadas y mantenibles</strong>, automatizar procesos repetitivos y convertir datos y problemas operativos en información, herramientas y sistemas útiles.</p>
-</td>
-<td width="37%" valign="top">
-<h3>En este GitHub</h3>
-<ul>
-<li>Ciencia de datos y analítica</li>
-<li>IA local y herramientas emergentes</li>
-<li>Desarrollo web y backend</li>
-<li>Bases de datos y SQL</li>
-<li>Sistemas e infraestructura</li>
-<li>Automatización</li>
-</ul>
-</td>
-</tr>
-</table>
+**En este GitHub encontrarás:** Ciencia de datos y analítica · IA local y herramientas emergentes · desarrollo web y backend · bases de datos y SQL · sistemas e infraestructura · automatización.
 
 <a id="areas-clave"></a>
 ## Áreas clave
 
-<table>
-<tr>
-<td width="50%" valign="top"><strong>Data Science &amp; Analytics</strong><br><sub>Limpieza, transformación, análisis exploratorio, estadística, visualización, Python, pandas, R, Shiny y Power BI.</sub></td>
-<td width="50%" valign="top"><strong>AI &amp; Emerging Tech</strong><br><sub>IA local, Ollama, modelos de lenguaje, automatización asistida y evaluación de herramientas emergentes.</sub></td>
-</tr>
-<tr>
-<td valign="top"><strong>Software &amp; Web Development</strong><br><sub>Desarrollo web, backend, APIs, programación general y experimentación con distintas tecnologías.</sub></td>
-<td valign="top"><strong>Databases</strong><br><sub>Modelado, consultas complejas, procedimientos, integración y administración de SQL Server, MariaDB, MySQL y PostgreSQL.</sub></td>
-</tr>
-<tr>
-<td valign="top"><strong>Systems &amp; Infrastructure</strong><br><sub>Linux, Windows Server, Active Directory, redes, contenedores, servicios on-premise, monitoreo y operación.</sub></td>
-<td valign="top"><strong>Automation &amp; Operations</strong><br><sub>PowerShell, Bash y Python aplicados a administración, integración, soporte y mejora de procesos.</sub></td>
-</tr>
-</table>
+### Data Science & Analytics
+<p align="justify">Limpieza y transformación de datos, análisis exploratorio, estadística, visualización, Python, pandas, R, Shiny y Power BI.</p>
+
+### AI & Emerging Tech
+<p align="justify">IA local, Ollama, modelos de lenguaje, automatización asistida y evaluación de herramientas emergentes.</p>
+
+### Software & Web Development
+<p align="justify">Desarrollo web, backend, APIs, programación general y experimentación con distintas tecnologías.</p>
+
+### Databases
+<p align="justify">Modelado, consultas complejas, procedimientos, integración y administración de SQL Server, MariaDB, MySQL y PostgreSQL.</p>
+
+### Systems & Infrastructure
+<p align="justify">Linux, Windows Server, Active Directory, redes, contenedores, servicios on-premise, monitoreo y operación.</p>
+
+### Automation & Operations
+<p align="justify">PowerShell, Bash y Python aplicados a administración, integración, soporte y mejora de procesos.</p>
 
 ## Forma de trabajo
 
@@ -115,7 +105,7 @@ PROFILE GOVERNANCE
   <img src="./assets/activity-es.svg" width="100%" alt="Actividad y contribuciones de GitHub de Argenis Padilla" />
 </p>
 
-<sub>La tarjeta de actividad se genera dentro de este mismo repositorio y se actualiza automáticamente con datos de GitHub.</sub>
+La tarjeta de actividad se genera dentro de este mismo repositorio y se actualiza automáticamente con datos de GitHub.
 
 ---
 
