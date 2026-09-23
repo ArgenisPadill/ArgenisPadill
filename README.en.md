@@ -2,9 +2,9 @@
 PROFILE GOVERNANCE
 - Primary profile language: Spanish (README.md)
 - Secondary language: English (README.en.md)
-- Localized heroes: assets/header-es.svg and assets/header-en.svg
-- Language controls: assets/language-es.svg and assets/language-en.svg
-- Generated metric assets: assets/activity-es.svg and assets/activity-en.svg (do not edit manually)
+- Adaptive heroes: assets/header-{es,en}.svg + light variants
+- Adaptive language controls: assets/language-{es,en}.svg + light variants
+- Generated metric assets: assets/activity-{es,en}.svg + light variants (do not edit manually)
 - Metric automation: .github/workflows/profile-metrics.yml
 - Keep both language versions structurally aligned.
 - Readability first: avoid <sub> for body content and avoid multi-column prose.
@@ -12,12 +12,20 @@ PROFILE GOVERNANCE
 -->
 
 <p align="center">
-  <img src="./assets/header-en.svg" width="100%" alt="Argenis Padilla — Systems, data science, AI, software and infrastructure" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/header-en.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/header-en-light.svg">
+    <img src="./assets/header-en.svg" width="100%" alt="Argenis Padilla — Systems, data science, AI, software and infrastructure">
+  </picture>
 </p>
 
 <p align="center">
   <a href="./README.md" title="Switch to Spanish">
-    <img src="./assets/language-en.svg" width="260" alt="Language selector: English active, Spanish available" />
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/language-en.svg">
+      <source media="(prefers-color-scheme: light)" srcset="./assets/language-en-light.svg">
+      <img src="./assets/language-en.svg" width="260" alt="Language selector: English active, Spanish available">
+    </picture>
   </a>
 </p>
 
@@ -28,6 +36,7 @@ PROFILE GOVERNANCE
 <p align="center">
   <a href="#about-me">About me</a>&nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="#key-areas">Key areas</a>&nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="#featured-projects">Projects</a>&nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="#technical-stack">Technical stack</a>&nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="#activity">Activity</a>
 </p>
@@ -60,6 +69,18 @@ I focus on building <strong>reproducible, documented, and maintainable solutions
 ## How I work
 
 > **Understand the context → design with intent → analyze before assuming → automate what is repeatable → experiment responsibly → document and improve.**
+
+<a id="featured-projects"></a>
+## Featured projects
+
+- **[SineOS](https://github.com/ArgenisPadill/SineOS)** — A reproducible personal environment for infrastructure, systems administration, development, automation, and local AI built on Debian GNU/Linux.  
+  `Debian` · `Podman` · `PostgreSQL` · automation · monitoring · local AI
+
+- **[Data Visualization with R and Shiny](https://github.com/ArgenisPadill/VisualizacionDeDatosConRyShiny)** — Data analysis and visualization using Mexico's ENIGH household survey and Mexico City Metro datasets.  
+  `R` · `Shiny` · data analysis · visualization
+
+- **[Multivariate Statistics](https://github.com/ArgenisPadill/EstadisticaMultiVariable)** — Statistical analysis exercises using the Iris dataset with Python and R.  
+  `Python` · `R` · statistics · exploratory analysis · visualization
 
 <a id="technical-stack"></a>
 ## Technical stack
@@ -97,10 +118,24 @@ I focus on building <strong>reproducible, documented, and maintainable solutions
 <!-- METRICS_EN:END -->
 
 <p align="center">
-  <img src="./assets/activity-en.svg" width="100%" alt="GitHub contribution activity calendar for Argenis Padilla" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-en.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/activity-en-light.svg">
+    <img src="./assets/activity-en.svg" width="100%" alt="GitHub contribution activity calendar for Argenis Padilla">
+  </picture>
 </p>
 
 Activity is generated inside this repository and automatically refreshed with GitHub data.
+
+<details>
+<summary><strong>Profile automation and maintenance</strong></summary>
+<br>
+
+[![Metrics update status](https://github.com/ArgenisPadill/ArgenisPadill/actions/workflows/profile-metrics.yml/badge.svg?branch=ArgenisPadill)](https://github.com/ArgenisPadill/ArgenisPadill/actions/workflows/profile-metrics.yml)
+
+Metrics, the contribution calendar, and light/dark theme variants are updated automatically with **GitHub Actions**. The main content remains native Markdown to preserve readability, accessibility, and browser zoom compatibility.
+
+</details>
 
 ---
 
