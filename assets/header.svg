@@ -1,58 +1,67 @@
-<svg width="1200" height="300" viewBox="0 0 1200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0B1220"/>
-      <stop offset="0.52" stop-color="#0D1729"/>
-      <stop offset="1" stop-color="#111827"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="250" y1="0" x2="950" y2="0" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#38BDF8"/>
-      <stop offset="0.5" stop-color="#60A5FA"/>
-      <stop offset="1" stop-color="#A78BFA"/>
-    </linearGradient>
-    <radialGradient id="glow">
-      <stop offset="0" stop-color="#38BDF8" stop-opacity=".30"/>
-      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="soft"><feGaussianBlur stdDeviation="22"/></filter>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none" stroke="#94A3B8" stroke-opacity=".06"/>
-    </pattern>
-  </defs>
+<svg width="1280" height="320" viewBox="0 0 1280 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="320" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#07111F"/><stop offset=".5" stop-color="#0B1628"/><stop offset="1" stop-color="#111827"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="80" y1="0" x2="1170" y2="0" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#38BDF8"/><stop offset=".5" stop-color="#60A5FA"/><stop offset="1" stop-color="#A78BFA"/>
+  </linearGradient>
+  <radialGradient id="glowA"><stop stop-color="#38BDF8" stop-opacity=".28"/><stop offset="1" stop-color="#38BDF8" stop-opacity="0"/></radialGradient>
+  <radialGradient id="glowB"><stop stop-color="#A78BFA" stop-opacity=".20"/><stop offset="1" stop-color="#A78BFA" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M38 0H0V38" fill="none" stroke="#94A3B8" stroke-opacity=".05"/></pattern>
+  <filter id="blur"><feGaussianBlur stdDeviation="28"/></filter>
+</defs>
+<style>
+  .a{animation:floatA 9s ease-in-out infinite alternate}.b{animation:floatB 11s ease-in-out infinite alternate}
+  .scan{animation:scan 7s linear infinite}.pulse{animation:pulse 2.8s ease-in-out infinite}
+  .flow{stroke-dasharray:7 11;animation:dash 14s linear infinite}
+  @keyframes floatA{from{transform:translate(-20px,-8px)}to{transform:translate(34px,14px)}}
+  @keyframes floatB{from{transform:translate(16px,10px)}to{transform:translate(-34px,-14px)}}
+  @keyframes scan{0%{transform:translateX(-400px);opacity:0}18%{opacity:.2}82%{opacity:.2}100%{transform:translateX(1500px);opacity:0}}
+  @keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}
+  @keyframes dash{to{stroke-dashoffset:-180}}
+  @media(prefers-reduced-motion:reduce){.a,.b,.scan,.pulse,.flow{animation:none}}
+</style>
 
-  <style>
-    .orbA { animation: driftA 8s ease-in-out infinite alternate; }
-    .orbB { animation: driftB 10s ease-in-out infinite alternate; }
-    .scan { animation: scan 5s linear infinite; }
-    .pulse { animation: pulse 2.4s ease-in-out infinite; }
-    .dash { stroke-dasharray: 10 14; animation: dash 12s linear infinite; }
-    @keyframes driftA { from { transform: translate(-20px,-6px); } to { transform: translate(55px,16px); } }
-    @keyframes driftB { from { transform: translate(20px,10px); } to { transform: translate(-60px,-12px); } }
-    @keyframes scan { 0% { transform: translateX(-500px); opacity:0; } 15% { opacity:.35; } 85% { opacity:.35; } 100% { transform: translateX(1500px); opacity:0; } }
-    @keyframes pulse { 0%,100% { opacity:.45; } 50% { opacity:1; } }
-    @keyframes dash { to { stroke-dashoffset:-240; } }
-    @media (prefers-reduced-motion: reduce) { .orbA,.orbB,.scan,.pulse,.dash { animation:none; } }
-  </style>
+<rect width="1280" height="320" rx="28" fill="url(#bg)"/>
+<rect width="1280" height="320" rx="28" fill="url(#grid)"/>
+<g class="a" filter="url(#blur)"><circle cx="150" cy="60" r="170" fill="url(#glowA)"/></g>
+<g class="b" filter="url(#blur)"><circle cx="1130" cy="270" r="190" fill="url(#glowB)"/></g>
 
-  <rect width="1200" height="300" rx="24" fill="url(#bg)"/>
-  <rect width="1200" height="300" rx="24" fill="url(#grid)"/>
+<rect x="52" y="42" width="770" height="236" rx="24" fill="#0E1727" fill-opacity=".74" stroke="#94A3B8" stroke-opacity=".12"/>
+<rect x="852" y="42" width="376" height="236" rx="24" fill="#0E1727" fill-opacity=".6" stroke="#94A3B8" stroke-opacity=".1"/>
 
-  <g class="orbA" filter="url(#soft)"><circle cx="170" cy="78" r="125" fill="url(#glow)"/></g>
-  <g class="orbB" filter="url(#soft)"><circle cx="1060" cy="220" r="155" fill="url(#glow)"/></g>
+<text x="88" y="82" fill="#94A3B8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" letter-spacing="2.2">TECHNOLOGY PORTFOLIO</text>
+<text x="88" y="135" fill="#F8FAFC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="42" font-weight="700" letter-spacing="3.4">ARGENIS PADILLA</text>
+<text x="88" y="176" fill="url(#accent)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17.5" font-weight="600" letter-spacing="1">Systems · Data Science · AI · Software · Databases · Infrastructure</text>
+<text x="88" y="210" fill="#CBD5E1" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14.5">Practical engineering across analytics, automation, development and operations.</text>
 
-  <path class="dash" d="M70 235 C260 200, 325 260, 490 224 S760 180, 1130 225" stroke="url(#accent)" stroke-opacity=".28" stroke-width="2" fill="none"/>
+<g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#E2E8F0">
+  <rect x="88" y="233" width="126" height="27" rx="13.5" fill="#111C30" stroke="#38BDF8" stroke-opacity=".28"/><text x="151" y="251" text-anchor="middle">DATA &amp; BI</text>
+  <rect x="226" y="233" width="102" height="27" rx="13.5" fill="#111C30" stroke="#60A5FA" stroke-opacity=".28"/><text x="277" y="251" text-anchor="middle">LOCAL AI</text>
+  <rect x="340" y="233" width="128" height="27" rx="13.5" fill="#111C30" stroke="#A78BFA" stroke-opacity=".28"/><text x="404" y="251" text-anchor="middle">WEB &amp; BACKEND</text>
+  <rect x="480" y="233" width="120" height="27" rx="13.5" fill="#111C30" stroke="#38BDF8" stroke-opacity=".28"/><text x="540" y="251" text-anchor="middle">DATABASES</text>
+  <rect x="612" y="233" width="164" height="27" rx="13.5" fill="#111C30" stroke="#60A5FA" stroke-opacity=".28"/><text x="694" y="251" text-anchor="middle">AUTOMATION &amp; OPS</text>
+</g>
 
-  <g opacity=".75">
-    <circle cx="84" cy="52" r="5" fill="#38BDF8" class="pulse"/>
-    <circle cx="104" cy="52" r="5" fill="#60A5FA" opacity=".65"/>
-    <circle cx="124" cy="52" r="5" fill="#A78BFA" opacity=".55"/>
-  </g>
+<text x="884" y="81" fill="#E2E8F0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="600">Integrated technology profile</text>
+<text x="884" y="103" fill="#94A3B8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11.5">From information to software to reliable operation</text>
 
-  <rect x="72" y="72" width="1056" height="166" rx="18" fill="#0F172A" fill-opacity=".46" stroke="#94A3B8" stroke-opacity=".12"/>
+<path class="flow" d="M924 183 C968 135 1017 135 1058 183 C1097 228 1146 226 1188 180" stroke="url(#accent)" stroke-width="2" stroke-opacity=".38" fill="none"/>
+<path d="M934 183H1177" stroke="#334155" stroke-width="1" stroke-opacity=".6"/>
 
-  <text x="600" y="128" text-anchor="middle" fill="#F8FAFC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="40" font-weight="700" letter-spacing="4">ARGENIS PADILLA</text>
-  <text x="600" y="172" text-anchor="middle" fill="url(#accent)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15.5" font-weight="600" letter-spacing="1.65">SYSTEMS • DATA SCIENCE • SOFTWARE • AI • INFRASTRUCTURE</text>
-  <text x="600" y="207" text-anchor="middle" fill="#94A3B8" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" letter-spacing="1.05">build · analyze · automate · experiment · secure · improve</text>
+<g font-family="Inter,Segoe UI,Arial,sans-serif">
+  <circle cx="930" cy="183" r="27" fill="#101C30" stroke="#38BDF8" stroke-opacity=".45"/>
+  <circle cx="1056" cy="183" r="27" fill="#101C30" stroke="#60A5FA" stroke-opacity=".45"/>
+  <circle cx="1182" cy="183" r="27" fill="#101C30" stroke="#A78BFA" stroke-opacity=".45"/>
+  <circle cx="930" cy="183" r="5" fill="#38BDF8" class="pulse"/>
+  <circle cx="1056" cy="183" r="5" fill="#60A5FA" class="pulse"/>
+  <circle cx="1182" cy="183" r="5" fill="#A78BFA" class="pulse"/>
+  <text x="930" y="227" text-anchor="middle" fill="#E2E8F0" font-size="12" font-weight="600">DATA</text>
+  <text x="1056" y="227" text-anchor="middle" fill="#E2E8F0" font-size="12" font-weight="600">BUILD</text>
+  <text x="1182" y="227" text-anchor="middle" fill="#E2E8F0" font-size="12" font-weight="600">OPERATE</text>
+  <text x="1056" y="255" text-anchor="middle" fill="#64748B" font-size="11">analyze · engineer · automate</text>
+</g>
 
-  <rect class="scan" x="-420" y="72" width="320" height="166" fill="url(#accent)" opacity=".08" transform="skewX(-16)"/>
+<rect class="scan" x="-360" y="42" width="210" height="236" fill="url(#accent)" opacity=".07" transform="skewX(-16)"/>
 </svg>
