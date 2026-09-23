@@ -32,7 +32,7 @@ jobs:
       - name: Commit updated metrics
         shell: bash
         run: |
-          if git diff --quiet -- assets/activity-es.svg assets/activity-en.svg; then
+          if [ -z "$(git status --porcelain -- assets/activity-es.svg assets/activity-en.svg)" ]; then
             echo "No metric changes to commit."
             exit 0
           fi
