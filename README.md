@@ -49,23 +49,12 @@ Me interesa construir soluciones <strong>reproducibles, documentadas y mantenibl
 <a id="areas-clave"></a>
 ## Áreas clave
 
-### Data Science & Analytics
-<p align="justify">Limpieza y transformación de datos, análisis exploratorio, estadística, visualización, Python, pandas, R, Shiny y Power BI.</p>
-
-### AI & Emerging Tech
-<p align="justify">IA local, Ollama, modelos de lenguaje, automatización asistida y evaluación de herramientas emergentes.</p>
-
-### Software & Web Development
-<p align="justify">Desarrollo web, backend, APIs, programación general y experimentación con distintas tecnologías.</p>
-
-### Databases
-<p align="justify">Modelado, consultas complejas, procedimientos, integración y administración de SQL Server, MariaDB, MySQL y PostgreSQL.</p>
-
-### Systems & Infrastructure
-<p align="justify">Linux, Windows Server, Active Directory, redes, contenedores, servicios on-premise, monitoreo y operación.</p>
-
-### Automation & Operations
-<p align="justify">PowerShell, Bash y Python aplicados a administración, integración, soporte y mejora de procesos.</p>
+- **Data Science & Analytics** — Limpieza y transformación de datos, análisis exploratorio, estadística, visualización, Python, pandas, R, Shiny y Power BI.
+- **AI & Emerging Tech** — IA local, Ollama, modelos de lenguaje, automatización asistida y evaluación de herramientas emergentes.
+- **Software & Web Development** — Desarrollo web, backend, APIs, programación general y experimentación con distintas tecnologías.
+- **Databases** — Modelado, consultas complejas, procedimientos, integración y administración de SQL Server, MariaDB, MySQL y PostgreSQL.
+- **Systems & Infrastructure** — Linux, Windows Server, Active Directory, redes, contenedores, servicios on-premise, monitoreo y operación.
+- **Automation & Operations** — PowerShell, Bash y Python aplicados a administración, integración, soporte y mejora de procesos.
 
 ## Forma de trabajo
 
@@ -101,11 +90,16 @@ Me interesa construir soluciones <strong>reproducibles, documentadas y mantenibl
 <a id="actividad"></a>
 ## Actividad
 
+<!-- METRICS_ES:START -->
+### Sincronizando actividad…
+Las métricas se actualizarán automáticamente desde GitHub.
+<!-- METRICS_ES:END -->
+
 <p align="center">
-  <img src="./assets/activity-es.svg" width="100%" alt="Actividad y contribuciones de GitHub de Argenis Padilla" />
+  <img src="./assets/activity-es.svg" width="100%" alt="Calendario de actividad y contribuciones de GitHub de Argenis Padilla" />
 </p>
 
-La tarjeta de actividad se genera dentro de este mismo repositorio y se actualiza automáticamente con datos de GitHub.
+La actividad se genera dentro de este mismo repositorio y se actualiza automáticamente con datos de GitHub.
 
 ---
 
