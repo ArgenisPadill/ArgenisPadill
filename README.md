@@ -1,14 +1,23 @@
 <!--
 PROFILE GOVERNANCE
-- Visible content: README.md
-- Visual assets: assets/
-- Generated metric asset: assets/activity.svg (do not edit manually)
+- Primary profile language: Spanish (README.md)
+- Secondary language: English (README.en.md)
+- Shared visual assets: assets/
+- Language controls: assets/language-es.svg and assets/language-en.svg
+- Generated metric assets: assets/activity-es.svg and assets/activity-en.svg (do not edit manually)
 - Metric automation: .github/workflows/profile-metrics.yml
+- Keep both language versions structurally aligned.
 - Keep the top-level narrative concise; detailed technologies belong in "Stack técnico".
 -->
 
 <p align="center">
   <img src="./assets/header.svg" width="100%" alt="Argenis Padilla — Systems, Data Science, AI, Software and Infrastructure" />
+</p>
+
+<p align="center">
+  <a href="./README.en.md" title="Cambiar a English">
+    <img src="./assets/language-es.svg" width="240" alt="Selector de idioma: Español activo, English disponible" />
+  </a>
 </p>
 
 <p align="center">
@@ -103,10 +112,10 @@ PROFILE GOVERNANCE
 ## Actividad
 
 <p align="center">
-  <img src="./assets/activity.svg" width="100%" alt="Actividad y contribuciones de GitHub de Argenis Padilla" />
+  <img src="./assets/activity-es.svg" width="100%" alt="Actividad y contribuciones de GitHub de Argenis Padilla" />
 </p>
 
-<sub>La tarjeta de actividad se genera dentro de este mismo repositorio y se actualiza automáticamente. Esto evita depender de imágenes estadísticas de terceros.</sub>
+<sub>La tarjeta de actividad se genera dentro de este mismo repositorio y se actualiza automáticamente con datos de GitHub.</sub>
 
 ---
 
