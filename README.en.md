@@ -68,22 +68,22 @@ I focus on building <strong>reproducible, documented, and maintainable solutions
 <br>
 
 **Data Science & Analytics**  
-`Python` · `pandas` · `R` · `Shiny` · `Power BI` · statistics · data visualization
+`Python` · `pandas` · `R` · `Shiny` · `Power BI` · Statistics · Data Visualization
 
-**AI & Emerging Tech**  
-`Ollama` · local AI · language models · `Groq` · `Gemini` · `Perplexity` · emerging technology experimentation
+**AI & Emerging Technologies**  
+`Ollama` · `Groq` · `Gemini` · `Perplexity` · Local AI · Language Models · Emerging Technology Experimentation
 
 **Software Development**  
-`C#` · `.NET / ASP.NET` · `Java` · `Python` · web development · backend · APIs
+`C#` · `.NET` · `ASP.NET` · `Java` · `Python` · Web Development · Backend · APIs
 
 **Databases**  
-`SQL Server` · `MariaDB` · `MySQL` · `PostgreSQL` · data modeling · complex queries · reporting
+`SQL Server` · `MariaDB` · `MySQL` · `PostgreSQL` · Data Modeling · Complex Queries · Reporting
 
 **Systems & Infrastructure**  
-`Debian` · `Fedora` · `Windows Server` · `Active Directory` · LAN · VLAN · MPLS · VPN · Fortinet
+`Debian` · `Fedora` · `Windows Server` · `Active Directory` · LAN · VLAN · MPLS · VPN · `Fortinet`
 
 **Automation & Tools**  
-`PowerShell` · `Bash` · `Python` · `Podman` · `Git` · `GitHub` · technical documentation · monitoring · troubleshooting
+`PowerShell` · `Bash` · `Python` · `Podman` · `Git` · `GitHub` · Technical Documentation · Monitoring · Troubleshooting
 
 </details>
 
