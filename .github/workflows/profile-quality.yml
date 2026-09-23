@@ -1,0 +1,37 @@
+name: Profile quality
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - ArgenisPadill
+    paths:
+      - "README.md"
+      - "README.en.md"
+      - "assets/**"
+      - ".github/scripts/validate_profile.py"
+      - ".github/workflows/profile-quality.yml"
+  pull_request:
+    paths:
+      - "README.md"
+      - "README.en.md"
+      - "assets/**"
+      - ".github/scripts/validate_profile.py"
+      - ".github/workflows/profile-quality.yml"
+  schedule:
+    - cron: "41 6 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Validate profile UX and structure
+        run: python .github/scripts/validate_profile.py
