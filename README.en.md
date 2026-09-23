@@ -49,23 +49,12 @@ I focus on building <strong>reproducible, documented, and maintainable solutions
 <a id="key-areas"></a>
 ## Key areas
 
-### Data Science & Analytics
-<p align="justify">Data cleaning and transformation, exploratory analysis, statistics, visualization, Python, pandas, R, Shiny, and Power BI.</p>
-
-### AI & Emerging Tech
-<p align="justify">Local AI, Ollama, language models, AI-assisted automation, and evaluation of emerging technologies.</p>
-
-### Software & Web Development
-<p align="justify">Web development, backend systems, APIs, general programming, and experimentation with different technologies.</p>
-
-### Databases
-<p align="justify">Data modeling, complex queries, procedures, integration, and administration of SQL Server, MariaDB, MySQL, and PostgreSQL.</p>
-
-### Systems & Infrastructure
-<p align="justify">Linux, Windows Server, Active Directory, networking, containers, on-premise services, monitoring, and operations.</p>
-
-### Automation & Operations
-<p align="justify">PowerShell, Bash, and Python applied to administration, integration, support, and process improvement.</p>
+- **Data Science & Analytics** — Data cleaning and transformation, exploratory analysis, statistics, visualization, Python, pandas, R, Shiny, and Power BI.
+- **AI & Emerging Tech** — Local AI, Ollama, language models, AI-assisted automation, and evaluation of emerging technologies.
+- **Software & Web Development** — Web development, backend systems, APIs, general programming, and experimentation with different technologies.
+- **Databases** — Data modeling, complex queries, procedures, integration, and administration of SQL Server, MariaDB, MySQL, and PostgreSQL.
+- **Systems & Infrastructure** — Linux, Windows Server, Active Directory, networking, containers, on-premise services, monitoring, and operations.
+- **Automation & Operations** — PowerShell, Bash, and Python applied to administration, integration, support, and process improvement.
 
 ## How I work
 
@@ -101,11 +90,16 @@ I focus on building <strong>reproducible, documented, and maintainable solutions
 <a id="activity"></a>
 ## Activity
 
+<!-- METRICS_EN:START -->
+### Syncing activity…
+Metrics will be refreshed automatically from GitHub.
+<!-- METRICS_EN:END -->
+
 <p align="center">
-  <img src="./assets/activity-en.svg" width="100%" alt="GitHub activity and contributions for Argenis Padilla" />
+  <img src="./assets/activity-en.svg" width="100%" alt="GitHub contribution activity calendar for Argenis Padilla" />
 </p>
 
-The activity card is generated inside this repository and automatically refreshed with GitHub data.
+Activity is generated inside this repository and automatically refreshed with GitHub data.
 
 ---
 
