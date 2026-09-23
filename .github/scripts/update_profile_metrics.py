@@ -3,6 +3,7 @@ from __future__ import annotations
 import datetime as dt
 import json
 import os
+import re
 import urllib.request
 from pathlib import Path
 from xml.sax.saxutils import escape
@@ -77,50 +78,46 @@ metrics = {
     "restricted": int(collection["restrictedContributionsCount"]),
 }
 
-W, H = 1180, 330
-CARD_Y = 112
-HEAT_Y = 226
-CELL = 10
-GAP = 3
-STEP = CELL + GAP
-HEAT_X = 58
-
 TEXT = {
     "es": {
         "output": Path("assets/activity-es.svg"),
-        "title": f"Actividad en GitHub · {year}",
-        "subtitle": "Métricas públicas de contribución generadas desde GitHub y almacenadas en este repositorio.",
-        "contributions": "Contribuciones",
-        "commits": "Commits",
-        "prs": "Pull requests",
-        "issues": "Issues",
-        "calendar": "Calendario de contribuciones",
-        "review_singular": "revisión",
-        "review_plural": "revisiones",
-        "private": "contribuciones privadas incluidas por GitHub",
+        "readme": Path("README.md"),
+        "marker": "METRICS_ES",
+        "title": f"Calendario de contribuciones · {year}",
+        "subtitle": "Actividad pública registrada por GitHub",
         "updated": "Actualizado",
         "generated": "Generado automáticamente con GitHub Actions",
         "contribution_singular": "contribución",
         "contribution_plural": "contribuciones",
+        "metrics_heading": lambda m: f"### {m['total']:,} contribuciones en {year}",
+        "metrics_line": lambda m: (
+            f"**{m['commits']:,} commits** · **{m['prs']:,} pull requests** · "
+            f"**{m['issues']:,} issues** · **{m['reviews']:,} revisiones**"
+        ),
     },
     "en": {
         "output": Path("assets/activity-en.svg"),
-        "title": f"GitHub Activity · {year}",
-        "subtitle": "Public contribution metrics generated from GitHub and stored in this profile repository.",
-        "contributions": "Contributions",
-        "commits": "Commits",
-        "prs": "Pull requests",
-        "issues": "Issues",
-        "calendar": "Contribution calendar",
-        "review_singular": "review",
-        "review_plural": "reviews",
-        "private": "private contributions included by GitHub",
+        "readme": Path("README.en.md"),
+        "marker": "METRICS_EN",
+        "title": f"Contribution calendar · {year}",
+        "subtitle": "Public activity recorded by GitHub",
         "updated": "Updated",
         "generated": "Generated automatically by GitHub Actions",
         "contribution_singular": "contribution",
         "contribution_plural": "contributions",
+        "metrics_heading": lambda m: f"### {m['total']:,} contributions in {year}",
+        "metrics_line": lambda m: (
+            f"**{m['commits']:,} commits** · **{m['prs']:,} pull requests** · "
+            f"**{m['issues']:,} issues** · **{m['reviews']:,} reviews**"
+        ),
     },
 }
+
+W, H = 900, 225
+CELL = 12
+GAP = 3
+STEP = CELL + GAP
+HEAT_Y = 78
 
 def color_for(count: int) -> str:
     if count <= 0:
@@ -133,67 +130,67 @@ def color_for(count: int) -> str:
         return "#2563EB"
     return "#7C3AED"
 
-def stat_card(x: int, label: str, value: int, width: int = 246) -> str:
-    return f"""
-    <g>
-      <rect x="{x}" y="{CARD_Y}" width="{width}" height="78" rx="16" fill="#101A2D" stroke="#94A3B8" stroke-opacity=".08"/>
-      <text x="{x + 22}" y="{CARD_Y + 28}" fill="#94A3B8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11.5" font-weight="600" letter-spacing=".7">{escape(label.upper())}</text>
-      <text x="{x + 22}" y="{CARD_Y + 59}" fill="#F8FAFC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="27" font-weight="700">{value:,}</text>
-    </g>"""
-
 def build_svg(lang: str) -> str:
     t = TEXT[lang]
+    heat_width = max(STEP, len(weeks) * STEP - GAP)
+    heat_x = max(32, (W - heat_width) / 2)
+
     parts = [f"""<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" fill="none" xmlns="http://www.w3.org/2000/svg">
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="{W}" y2="{H}" gradientUnits="userSpaceOnUse">
     <stop stop-color="#0B1220"/><stop offset="1" stop-color="#111827"/>
   </linearGradient>
-  <linearGradient id="accent" x1="48" y1="0" x2="1132" y2="0" gradientUnits="userSpaceOnUse">
+  <linearGradient id="accent" x1="30" y1="0" x2="{W-30}" y2="0" gradientUnits="userSpaceOnUse">
     <stop stop-color="#38BDF8"/><stop offset=".55" stop-color="#60A5FA"/><stop offset="1" stop-color="#A78BFA"/>
   </linearGradient>
 </defs>
-<rect width="{W}" height="{H}" rx="24" fill="url(#bg)"/>
-<rect x="28" y="28" width="{W-56}" height="{H-56}" rx="20" fill="#0E1727" stroke="#94A3B8" stroke-opacity=".10"/>
-<text x="56" y="70" fill="#F8FAFC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="700">{escape(t["title"])}</text>
-<text x="56" y="94" fill="#94A3B8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12.5">{escape(t["subtitle"])}</text>
+<rect width="{W}" height="{H}" rx="22" fill="url(#bg)"/>
+<rect x="18" y="18" width="{W-36}" height="{H-36}" rx="18" fill="#0E1727" stroke="#94A3B8" stroke-opacity=".10"/>
+<text x="42" y="54" fill="#F8FAFC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="22" font-weight="700">{escape(t["title"])}</text>
+<text x="42" y="74" fill="#94A3B8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13.5">{escape(t["subtitle"])}</text>
 """]
-
-    parts.append(stat_card(56, t["contributions"], metrics["total"]))
-    parts.append(stat_card(316, t["commits"], metrics["commits"]))
-    parts.append(stat_card(576, t["prs"], metrics["prs"]))
-    parts.append(stat_card(836, t["issues"], metrics["issues"]))
-
-    parts.append(
-        f'<text x="56" y="216" fill="#CBD5E1" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12.5" font-weight="600">{escape(t["calendar"])}</text>'
-    )
 
     for wx, week in enumerate(weeks):
         for dy, day in enumerate(week["contributionDays"]):
             count = int(day["contributionCount"])
-            x = HEAT_X + wx * STEP
+            x = heat_x + wx * STEP
             y = HEAT_Y + dy * STEP
             label = t["contribution_singular"] if count == 1 else t["contribution_plural"]
             parts.append(
-                f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="2" fill="{color_for(count)}">'
+                f'<rect x="{x:.1f}" y="{y}" width="{CELL}" height="{CELL}" rx="2.4" fill="{color_for(count)}">'
                 f'<title>{escape(day["date"])} · {count} {escape(label)}</title></rect>'
             )
 
-    review_word = t["review_singular"] if metrics["reviews"] == 1 else t["review_plural"]
-    summary = f'{metrics["reviews"]:,} {review_word}'
-    if metrics["restricted"]:
-        summary += f' · {metrics["restricted"]:,} {t["private"]}'
-
     parts.append(
-        f'<text x="1124" y="216" text-anchor="end" fill="#64748B" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11">{escape(summary)}</text>'
-    )
-    parts.append(
-        f'<text x="56" y="312" fill="#64748B" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10.5">{escape(t["updated"])} {now.strftime("%Y-%m-%d %H:%M UTC")} · {escape(t["generated"])}</text>'
+        f'<text x="42" y="207" fill="#64748B" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11.5">'
+        f'{escape(t["updated"])} {now.strftime("%Y-%m-%d %H:%M UTC")} · {escape(t["generated"])}</text>'
     )
     parts.append("</svg>")
     return "".join(parts)
 
+def update_readme(lang: str) -> None:
+    t = TEXT[lang]
+    path = t["readme"]
+    content = path.read_text(encoding="utf-8")
+    marker = t["marker"]
+    replacement = (
+        f"<!-- {marker}:START -->\n"
+        f"{t['metrics_heading'](metrics)}\n"
+        f"{t['metrics_line'](metrics)}\n"
+        f"<!-- {marker}:END -->"
+    )
+    pattern = re.compile(
+        rf"<!-- {re.escape(marker)}:START -->.*?<!-- {re.escape(marker)}:END -->",
+        re.DOTALL,
+    )
+    updated, count = pattern.subn(replacement, content, count=1)
+    if count != 1:
+        raise RuntimeError(f"Metrics marker not found in {path}: {marker}")
+    path.write_text(updated, encoding="utf-8")
+
 for lang in ("es", "en"):
-    output = TEXT[lang]["output"]
-    output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(build_svg(lang), encoding="utf-8")
-    print(f"Wrote {output} — {metrics['total']} contributions in {year}")
+    t = TEXT[lang]
+    t["output"].parent.mkdir(parents=True, exist_ok=True)
+    t["output"].write_text(build_svg(lang), encoding="utf-8")
+    update_readme(lang)
+    print(f"Updated {lang}: {metrics['total']} contributions in {year}")
