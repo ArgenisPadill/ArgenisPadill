@@ -132,6 +132,7 @@ La actividad se genera dentro de este mismo repositorio y se actualiza automáti
 <br>
 
 [![Estado de actualización de métricas](https://github.com/ArgenisPadill/ArgenisPadill/actions/workflows/profile-metrics.yml/badge.svg?branch=ArgenisPadill)](https://github.com/ArgenisPadill/ArgenisPadill/actions/workflows/profile-metrics.yml)
+[![Calidad del perfil](https://github.com/ArgenisPadill/ArgenisPadill/actions/workflows/profile-quality.yml/badge.svg?branch=ArgenisPadill)](https://github.com/ArgenisPadill/ArgenisPadill/actions/workflows/profile-quality.yml)
 
 Las métricas, el calendario de contribuciones y sus variantes para tema claro y oscuro se actualizan automáticamente mediante **GitHub Actions**. El contenido principal permanece en Markdown nativo para conservar legibilidad, accesibilidad y compatibilidad con el zoom del navegador.
 
