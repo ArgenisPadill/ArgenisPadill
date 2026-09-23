@@ -77,8 +77,9 @@ for label, content, sections in (
     if len(content.encode("utf-8")) > 400_000:
         fail(f"{label} is approaching GitHub's README rendering limit.")
 
-    if "<sub>" in content.lower():
-        fail(f"{label} contains <sub>, which reduces body-text readability.")
+    visible_content = re.sub(r"<!--.*?-->", "", content, flags=re.DOTALL)
+    if "<sub>" in visible_content.lower():
+        fail(f"{label} contains visible <sub>, which reduces body-text readability.")
 
     for section in sections:
         if section not in content:
