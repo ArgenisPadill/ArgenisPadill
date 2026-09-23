@@ -9,7 +9,8 @@ from xml.sax.saxutils import escape
 
 USERNAME = os.environ.get("PROFILE_USERNAME", "ArgenisPadill")
 TOKEN = os.environ["GITHUB_TOKEN"]
-OUTPUT = Path("assets/activity.svg")\n# Generated asset: keep this script as the single source of truth for profile metrics.
+OUTPUT = Path("assets/activity.svg")
+# Generated asset: keep this script as the single source of truth for profile metrics.
 
 now = dt.datetime.now(dt.timezone.utc)
 year = now.year
