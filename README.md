@@ -91,8 +91,8 @@ Me interesa construir soluciones <strong>reproducibles, documentadas y mantenibl
 ## Actividad
 
 <!-- METRICS_ES:START -->
-### Sincronizando actividad…
-Las métricas se actualizarán automáticamente desde GitHub.
+### 40 contribuciones en 2026
+**37 commits** · **0 pull requests** · **0 issues** · **0 revisiones**
 <!-- METRICS_ES:END -->
 
 <p align="center">

@@ -91,8 +91,8 @@ I focus on building <strong>reproducible, documented, and maintainable solutions
 ## Activity
 
 <!-- METRICS_EN:START -->
-### Syncing activity…
-Metrics will be refreshed automatically from GitHub.
+### 40 contributions in 2026
+**37 commits** · **0 pull requests** · **0 issues** · **0 reviews**
 <!-- METRICS_EN:END -->
 
 <p align="center">
