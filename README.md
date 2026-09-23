@@ -67,23 +67,23 @@ Me interesa construir soluciones <strong>reproducibles, documentadas y mantenibl
 <summary><strong>Ver stack técnico ampliado</strong></summary>
 <br>
 
-**Data Science & Analytics**  
-`Python` · `pandas` · `R` · `Shiny` · `Power BI` · estadística · visualización de datos
+**Ciencia de Datos y Analítica**  
+`Python` · `pandas` · `R` · `Shiny` · `Power BI` · Estadística · Visualización de datos
 
-**AI & Emerging Tech**  
-`Ollama` · IA local · modelos de lenguaje · `Groq` · `Gemini` · `Perplexity` · experimentación con herramientas emergentes
+**IA y Tecnologías Emergentes**  
+`Ollama` · `Groq` · `Gemini` · `Perplexity` · IA local · Modelos de lenguaje · Experimentación con herramientas emergentes
 
-**Software Development**  
-`C#` · `.NET / ASP.NET` · `Java` · `Python` · desarrollo web · backend · APIs
+**Desarrollo de Software**  
+`C#` · `.NET` · `ASP.NET` · `Java` · `Python` · Desarrollo web · Backend · APIs
 
-**Databases**  
-`SQL Server` · `MariaDB` · `MySQL` · `PostgreSQL` · modelado · consultas complejas · reporteo
+**Bases de Datos**  
+`SQL Server` · `MariaDB` · `MySQL` · `PostgreSQL` · Modelado de datos · Consultas complejas · Reportes
 
-**Systems & Infrastructure**  
-`Debian` · `Fedora` · `Windows Server` · `Active Directory` · LAN · VLAN · MPLS · VPN · Fortinet
+**Sistemas e Infraestructura**  
+`Debian` · `Fedora` · `Windows Server` · `Active Directory` · LAN · VLAN · MPLS · VPN · `Fortinet`
 
-**Automation & Tools**  
-`PowerShell` · `Bash` · `Python` · `Podman` · `Git` · `GitHub` · documentación técnica · monitoreo · troubleshooting
+**Automatización y Herramientas**  
+`PowerShell` · `Bash` · `Python` · `Podman` · `Git` · `GitHub` · Documentación técnica · Monitoreo · Diagnóstico de incidentes
 
 </details>
 
