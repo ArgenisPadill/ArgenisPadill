@@ -1,95 +1,115 @@
+<!--
+PROFILE GOVERNANCE
+- Visible content: README.md
+- Visual assets: assets/
+- Generated metric asset: assets/activity.svg (do not edit manually)
+- Metric automation: .github/workflows/profile-metrics.yml
+- Keep the top-level narrative concise; detailed technologies belong in "Stack técnico".
+-->
+
 <p align="center">
-  <img src="./assets/header.svg" width="100%" alt="Argenis Padilla — Systems, Data Science, Software, AI and Infrastructure" />
+  <img src="./assets/header.svg" width="100%" alt="Argenis Padilla — Systems, Data Science, AI, Software and Infrastructure" />
 </p>
 
 <p align="center">
-  <img alt="Systems & Infrastructure" src="https://img.shields.io/badge/Systems-Infrastructure-0F172A?style=flat-square&logo=linux&logoColor=38BDF8" />
-  <img alt="Data Science & Analytics" src="https://img.shields.io/badge/Data-Science%20%26%20Analytics-0F172A?style=flat-square&logo=python&logoColor=60A5FA" />
-  <img alt="Software & Web Development" src="https://img.shields.io/badge/Software-Web%20Development-0F172A?style=flat-square&logo=dotnet&logoColor=A78BFA" />
-  <img alt="AI & Emerging Tech" src="https://img.shields.io/badge/AI-Emerging%20Tech-0F172A?style=flat-square&logo=ollama&logoColor=38BDF8" />
-  <img alt="Databases" src="https://img.shields.io/badge/Database-Engineering-0F172A?style=flat-square&logo=databricks&logoColor=38BDF8" />
-  <img alt="Automation" src="https://img.shields.io/badge/Automation-Scripting-0F172A?style=flat-square&logo=powershell&logoColor=60A5FA" />
+  <sub><strong>Systems</strong> · <strong>Data Science</strong> · <strong>AI</strong> · <strong>Software</strong> · <strong>Databases</strong> · <strong>Infrastructure</strong> · <strong>Automation</strong></sub>
 </p>
 
-## Hola, soy Argenis 👋
-
-Soy un profesional de tecnología con experiencia en **administración de sistemas e infraestructura, desarrollo de software, backend, bases de datos, análisis de datos e inteligencia artificial aplicada**. Mi perfil combina operación tecnológica con programación y una formación especializada en **Ciencia de Datos**, lo que me permite trabajar desde la infraestructura que soporta una solución hasta el procesamiento, análisis y presentación de la información que genera.
-
-También exploro **IA local, modelos de lenguaje y herramientas emergentes**, especialmente cuando pueden integrarse a flujos de automatización, análisis, productividad o desarrollo sin depender por completo de servicios externos.
-
-Me interesa construir soluciones **reproducibles, documentadas y mantenibles**, automatizar procesos repetitivos y convertir datos y problemas operativos en información, herramientas y sistemas útiles.
-
-## Qué encontrarás en este GitHub
-
-- **Data Science & Analytics:** análisis exploratorio, limpieza y transformación de datos, visualización, estadística, Python, pandas, R, Shiny y Power BI.
-- **Artificial Intelligence & Emerging Tech:** proyectos y experimentos con IA local, modelos ejecutados on-premise, Ollama, automatización asistida por IA y evaluación de herramientas emergentes.
-- **Software & Web Development:** proyectos web, backend, aplicaciones, APIs, ejercicios de programación y experimentación con distintas tecnologías.
-- **Databases:** modelado, SQL, consultas complejas, procedimientos, integración y administración de SQL Server, MariaDB, MySQL y PostgreSQL.
-- **Systems & Infrastructure:** Linux, Windows Server, Active Directory, redes, contenedores, servicios on-premise, monitoreo y automatización.
-- **Automation & Tools:** PowerShell, Bash y Python aplicados a administración, procesamiento de información, integración y mejora de procesos.
-
-### Áreas en las que trabajo
-
-| Área | Tecnologías y enfoque |
-| --- | --- |
-| **Data Science & Analytics** | Python, pandas, R, Shiny, Power BI, estadística, limpieza, transformación, análisis y visualización de datos |
-| **Artificial Intelligence & Emerging Tech** | IA local, Ollama, modelos de lenguaje, automatización asistida, experimentación e integración de herramientas emergentes |
-| **Software & Web Development** | C#, .NET / ASP.NET, Java, Python, desarrollo backend, aplicaciones web, APIs y programación general |
-| **Databases** | SQL Server, MariaDB, MySQL, PostgreSQL, modelado, consultas complejas, procedimientos y reporteo |
-| **Systems & Infrastructure** | Debian, Fedora, Windows Server, Active Directory, LAN/VLAN, VPN, MPLS, Podman y continuidad operativa |
-| **Automation** | PowerShell, Bash, Python, scripting, integración de tareas y automatización de procesos |
-| **Security & Operations** | Control de accesos, respaldos, bitácoras, perfiles, permisos, diagnóstico de incidentes y documentación técnica |
-
-### Cómo abordo la tecnología
-
-```text
-01. Entender el problema y el contexto
-02. Diseñar una solución simple, segura y mantenible
-03. Analizar los datos antes de asumir
-04. Automatizar lo repetible
-05. Experimentar con criterio antes de adoptar tecnología nueva
-06. Medir, documentar y dejar trazabilidad
-07. Mejorar el proceso después de resolverlo
-```
-
-<details>
-<summary><strong>Stack técnico ampliado</strong></summary>
-<br>
-
-**Data Science & Analytics:** Python · pandas · R · Shiny · Power BI · estadística · visualización de datos  
-**AI & Emerging Tech:** Ollama · IA local · modelos de lenguaje · Groq · Gemini · Perplexity · experimentación con herramientas emergentes  
-**Sistemas:** Debian · Fedora · Windows Server · Active Directory  
-**Infraestructura:** LAN · VLAN · MPLS · VPN · Fortinet · redes y soporte on-premise  
-**Contenedores:** Podman · Compose · administración de servicios  
-**Desarrollo:** C# · .NET / ASP.NET · Java · Python · desarrollo web · backend  
-**Automatización:** PowerShell · Bash · Python  
-**Bases de datos:** SQL Server · MariaDB · MySQL · PostgreSQL  
-**Herramientas:** Git · GitHub · documentación técnica · monitoreo · troubleshooting
-
-</details>
-
-## Actividad en GitHub
-
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=ArgenisPadill&show_icons=true&hide_border=true&rank_icon=github&theme=github_dark&bg_color=00000000" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=ArgenisPadill&show_icons=true&hide_border=true&rank_icon=github&theme=default" />
-    <img height="170" alt="Estadísticas de GitHub de Argenis Padilla" src="https://github-readme-stats.vercel.app/api?username=ArgenisPadill&show_icons=true&hide_border=true&rank_icon=github" />
-  </picture>
-  &nbsp;
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=ArgenisPadill&theme=github-dark-blue&hide_border=true&background=00000000" />
-    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=ArgenisPadill&theme=default&hide_border=true" />
-    <img height="170" alt="Racha de contribuciones de Argenis Padilla" src="https://streak-stats.demolab.com?user=ArgenisPadill&hide_border=true" />
-  </picture>
+  <a href="#sobre-mi">Sobre mí</a>&nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="#areas-clave">Áreas clave</a>&nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="#stack-tecnico">Stack técnico</a>&nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="#actividad">Actividad</a>
 </p>
 
 ---
 
-<p align="center">
-  <em>“Más que trabajo: compromiso. Más que palabras: resultados.”</em>
-</p>
+<a id="sobre-mi"></a>
+## Sobre mí
+
+<table>
+<tr>
+<td width="63%" valign="top">
+<p>Soy un profesional de tecnología con experiencia en <strong>sistemas e infraestructura</strong>, <strong>desarrollo de software</strong>, <strong>bases de datos</strong>, <strong>análisis de datos</strong> e <strong>inteligencia artificial aplicada</strong>.</p>
+
+<p>Mi perfil combina operación tecnológica con programación y una formación especializada en <strong>Ciencia de Datos</strong>, lo que me permite trabajar desde la infraestructura que soporta una solución hasta el procesamiento, análisis y presentación de la información que genera.</p>
+
+<p>Me interesa construir soluciones <strong>reproducibles, documentadas y mantenibles</strong>, automatizar procesos repetitivos y convertir datos y problemas operativos en información, herramientas y sistemas útiles.</p>
+</td>
+<td width="37%" valign="top">
+<h3>En este GitHub</h3>
+<ul>
+<li>Ciencia de datos y analítica</li>
+<li>IA local y herramientas emergentes</li>
+<li>Desarrollo web y backend</li>
+<li>Bases de datos y SQL</li>
+<li>Sistemas e infraestructura</li>
+<li>Automatización</li>
+</ul>
+</td>
+</tr>
+</table>
+
+<a id="areas-clave"></a>
+## Áreas clave
+
+<table>
+<tr>
+<td width="50%" valign="top"><strong>Data Science &amp; Analytics</strong><br><sub>Limpieza, transformación, análisis exploratorio, estadística, visualización, Python, pandas, R, Shiny y Power BI.</sub></td>
+<td width="50%" valign="top"><strong>AI &amp; Emerging Tech</strong><br><sub>IA local, Ollama, modelos de lenguaje, automatización asistida y evaluación de herramientas emergentes.</sub></td>
+</tr>
+<tr>
+<td valign="top"><strong>Software &amp; Web Development</strong><br><sub>Desarrollo web, backend, APIs, programación general y experimentación con distintas tecnologías.</sub></td>
+<td valign="top"><strong>Databases</strong><br><sub>Modelado, consultas complejas, procedimientos, integración y administración de SQL Server, MariaDB, MySQL y PostgreSQL.</sub></td>
+</tr>
+<tr>
+<td valign="top"><strong>Systems &amp; Infrastructure</strong><br><sub>Linux, Windows Server, Active Directory, redes, contenedores, servicios on-premise, monitoreo y operación.</sub></td>
+<td valign="top"><strong>Automation &amp; Operations</strong><br><sub>PowerShell, Bash y Python aplicados a administración, integración, soporte y mejora de procesos.</sub></td>
+</tr>
+</table>
+
+## Forma de trabajo
+
+> **Entender el contexto → diseñar con criterio → analizar antes de asumir → automatizar lo repetible → experimentar con responsabilidad → documentar y mejorar.**
+
+<a id="stack-tecnico"></a>
+## Stack técnico
+
+<details>
+<summary><strong>Ver stack técnico ampliado</strong></summary>
+<br>
+
+**Data Science & Analytics**  
+`Python` · `pandas` · `R` · `Shiny` · `Power BI` · estadística · visualización de datos
+
+**AI & Emerging Tech**  
+`Ollama` · IA local · modelos de lenguaje · `Groq` · `Gemini` · `Perplexity` · experimentación con herramientas emergentes
+
+**Software Development**  
+`C#` · `.NET / ASP.NET` · `Java` · `Python` · desarrollo web · backend · APIs
+
+**Databases**  
+`SQL Server` · `MariaDB` · `MySQL` · `PostgreSQL` · modelado · consultas complejas · reporteo
+
+**Systems & Infrastructure**  
+`Debian` · `Fedora` · `Windows Server` · `Active Directory` · LAN · VLAN · MPLS · VPN · Fortinet
+
+**Automation & Tools**  
+`PowerShell` · `Bash` · `Python` · `Podman` · `Git` · `GitHub` · documentación técnica · monitoreo · troubleshooting
+
+</details>
+
+<a id="actividad"></a>
+## Actividad
 
 <p align="center">
-  <sub>Systems · Data Science · AI · Software · Databases · Infrastructure · Automation</sub>
+  <img src="./assets/activity.svg" width="100%" alt="Actividad y contribuciones de GitHub de Argenis Padilla" />
+</p>
+
+<sub>La tarjeta de actividad se genera dentro de este mismo repositorio y se actualiza automáticamente. Esto evita depender de imágenes estadísticas de terceros.</sub>
+
+---
+
+<p align="center">
+  <em>Más que trabajo: compromiso. Más que palabras: resultados.</em>
 </p>
