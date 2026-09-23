@@ -132,6 +132,7 @@ Activity is generated inside this repository and automatically refreshed with Gi
 <br>
 
 [![Metrics update status](https://github.com/ArgenisPadill/ArgenisPadill/actions/workflows/profile-metrics.yml/badge.svg?branch=ArgenisPadill)](https://github.com/ArgenisPadill/ArgenisPadill/actions/workflows/profile-metrics.yml)
+[![Profile quality](https://github.com/ArgenisPadill/ArgenisPadill/actions/workflows/profile-quality.yml/badge.svg?branch=ArgenisPadill)](https://github.com/ArgenisPadill/ArgenisPadill/actions/workflows/profile-quality.yml)
 
 Metrics, the contribution calendar, and light/dark theme variants are updated automatically with **GitHub Actions**. The main content remains native Markdown to preserve readability, accessibility, and browser zoom compatibility.
 
