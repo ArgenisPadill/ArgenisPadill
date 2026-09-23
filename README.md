@@ -1,51 +1,62 @@
 <p align="center">
-  <img src="./assets/header.svg" width="100%" alt="Argenis Padilla — Systems, Infrastructure, Backend and Data" />
+  <img src="./assets/header.svg" width="100%" alt="Argenis Padilla — Systems, Data Science, Software and Infrastructure" />
 </p>
 
 <p align="center">
-  <img alt="Systems Administration" src="https://img.shields.io/badge/Systems-Administration-0F172A?style=flat-square&logo=linux&logoColor=38BDF8" />
-  <img alt="Infrastructure" src="https://img.shields.io/badge/IT-Infrastructure-0F172A?style=flat-square&logo=serverfault&logoColor=60A5FA" />
-  <img alt="Backend" src="https://img.shields.io/badge/Backend-Engineering-0F172A?style=flat-square&logo=dotnet&logoColor=A78BFA" />
+  <img alt="Systems & Infrastructure" src="https://img.shields.io/badge/Systems-Infrastructure-0F172A?style=flat-square&logo=linux&logoColor=38BDF8" />
+  <img alt="Data Science & Analytics" src="https://img.shields.io/badge/Data-Science%20%26%20Analytics-0F172A?style=flat-square&logo=python&logoColor=60A5FA" />
+  <img alt="Software & Web Development" src="https://img.shields.io/badge/Software-Web%20Development-0F172A?style=flat-square&logo=dotnet&logoColor=A78BFA" />
   <img alt="Databases" src="https://img.shields.io/badge/Database-Engineering-0F172A?style=flat-square&logo=databricks&logoColor=38BDF8" />
   <img alt="Automation" src="https://img.shields.io/badge/Automation-Scripting-0F172A?style=flat-square&logo=powershell&logoColor=60A5FA" />
 </p>
 
 ## Hola, soy Argenis 👋
 
-Soy **administrador de sistemas e infraestructura**, desarrollador con énfasis en **backend** y gestor de **bases de datos**. Trabajo con una visión integral del servicio: desde servidores, redes, accesos y operación, hasta automatización, desarrollo, datos y soporte a usuarios.
+Soy un profesional de tecnología con experiencia en **administración de sistemas e infraestructura, desarrollo de software, backend, bases de datos y análisis de datos**. Mi perfil combina operación tecnológica con programación y una formación especializada en **Ciencia de Datos**, lo que me permite trabajar desde la infraestructura que soporta una solución hasta el procesamiento, análisis y presentación de la información que genera.
 
-Me gusta convertir problemas operativos en soluciones **reproducibles, documentadas y mantenibles**, priorizando estabilidad, seguridad, trazabilidad y mejora continua.
+Me interesa construir soluciones **reproducibles, documentadas y mantenibles**, automatizar procesos repetitivos y convertir datos y problemas operativos en información y herramientas útiles.
+
+## Qué encontrarás en este GitHub
+
+- **Data Science & Analytics:** análisis exploratorio, limpieza y transformación de datos, visualización, estadística, Python, pandas, R, Shiny y Power BI.
+- **Software & Web Development:** proyectos web, backend, aplicaciones, APIs, ejercicios de programación y experimentación con distintas tecnologías.
+- **Databases:** modelado, SQL, consultas complejas, procedimientos, integración y administración de SQL Server, MariaDB, MySQL y PostgreSQL.
+- **Systems & Infrastructure:** Linux, Windows Server, Active Directory, redes, contenedores, servicios on-premise, monitoreo y automatización.
+- **Automation & Tools:** PowerShell, Bash y Python aplicados a administración, procesamiento de información y mejora de procesos.
 
 ### Áreas en las que trabajo
 
 | Área | Tecnologías y enfoque |
 | --- | --- |
-| **Systems & Infrastructure** | Linux (Debian/Fedora), Windows Server, Active Directory, LAN/VLAN, VPN, MPLS, Podman, monitoreo y continuidad operativa |
-| **Backend & Automation** | C#, .NET / ASP.NET, Java, Python, PowerShell, scripting y automatización de procesos |
-| **Databases & Data** | SQL Server, MariaDB, MySQL, PostgreSQL, consultas complejas, procedimientos, reporteo y Power BI |
-| **Security & Operations** | Control de accesos, respaldos, bitácoras, perfiles y permisos, diagnóstico de incidentes y documentación técnica |
+| **Data Science & Analytics** | Python, pandas, R, Shiny, Power BI, estadística, limpieza, transformación, análisis y visualización de datos |
+| **Software & Web Development** | C#, .NET / ASP.NET, Java, Python, desarrollo backend, aplicaciones web, APIs y programación general |
+| **Databases** | SQL Server, MariaDB, MySQL, PostgreSQL, modelado, consultas complejas, procedimientos y reporteo |
+| **Systems & Infrastructure** | Debian, Fedora, Windows Server, Active Directory, LAN/VLAN, VPN, MPLS, Podman y continuidad operativa |
+| **Automation** | PowerShell, Bash, Python, scripting, integración de tareas y automatización de procesos |
+| **Security & Operations** | Control de accesos, respaldos, bitácoras, perfiles, permisos, diagnóstico de incidentes y documentación técnica |
 
 ### Cómo abordo la tecnología
 
 ```text
-01. Entender el problema antes de tocar producción
+01. Entender el problema y el contexto
 02. Diseñar una solución simple, segura y mantenible
-03. Automatizar lo repetible
-04. Medir, documentar y dejar trazabilidad
-05. Mejorar el proceso después de resolver el incidente
+03. Analizar los datos antes de asumir
+04. Automatizar lo repetible
+05. Medir, documentar y dejar trazabilidad
+06. Mejorar el proceso después de resolverlo
 ```
 
 <details>
 <summary><strong>Stack técnico ampliado</strong></summary>
 <br>
 
+**Data Science & Analytics:** Python · pandas · R · Shiny · Power BI · estadística · visualización de datos  
 **Sistemas:** Debian · Fedora · Windows Server · Active Directory  
 **Infraestructura:** LAN · VLAN · MPLS · VPN · Fortinet · redes y soporte on-premise  
 **Contenedores:** Podman · Compose · administración de servicios  
-**Backend:** C# · .NET / ASP.NET · Java · Python  
+**Desarrollo:** C# · .NET / ASP.NET · Java · Python · desarrollo web · backend  
 **Automatización:** PowerShell · Bash · Python  
 **Bases de datos:** SQL Server · MariaDB · MySQL · PostgreSQL  
-**Datos:** Power BI · pandas · R · Shiny  
 **Herramientas:** Git · GitHub · documentación técnica · monitoreo · troubleshooting
 
 </details>
@@ -73,5 +84,5 @@ Me gusta convertir problemas operativos en soluciones **reproducibles, documenta
 </p>
 
 <p align="center">
-  <sub>Systems · Infrastructure · Backend · Databases · Automation</sub>
+  <sub>Systems · Data Science · Software · Databases · Infrastructure · Automation</sub>
 </p>
