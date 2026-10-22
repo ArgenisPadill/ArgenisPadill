@@ -113,8 +113,8 @@ I focus on building <strong>reproducible, documented, and maintainable solutions
 ## Activity
 
 <!-- METRICS_EN:START -->
-### 270 contributions in 2026
-**258 commits** · **12 active days** · **longest streak: 3 days**
+### 294 contributions in 2026
+**280 commits** · **14 active days** · **longest streak: 3 days**
 <!-- METRICS_EN:END -->
 
 <p align="center">

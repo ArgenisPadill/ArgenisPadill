@@ -113,8 +113,8 @@ Me interesa construir soluciones <strong>reproducibles, documentadas y mantenibl
 ## Actividad
 
 <!-- METRICS_ES:START -->
-### 270 contribuciones en 2026
-**258 commits** · **12 días activos** · **mejor racha: 3 días**
+### 294 contribuciones en 2026
+**280 commits** · **14 días activos** · **mejor racha: 3 días**
 <!-- METRICS_ES:END -->
 
 <p align="center">
